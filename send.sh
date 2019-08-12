@@ -42,14 +42,14 @@ fi
 
 TIMESTAMP=$(date --utc +%FT%TZ)
 WEBHOOK_DATA='{
-  "username": "bob_the_builder",
-  "avatar_url": "https://github.com/arpitkamboj/travis-ci-discord-webhook/blob/master/bob_the_builder.jpg",
+  "username": "Bob The Builder",
+  "avatar_url": "https://github.com/arpitkamboj/travis-ci-discord-webhook/raw/master/bob_the_builder.jpg",
   "embeds": [ {
     "color": '$EMBED_COLOR',
     "author": {
       "name": "Job #'"$TRAVIS_JOB_NUMBER"' (Build #'"$TRAVIS_BUILD_NUMBER"') '"$STATUS_MESSAGE"' - '"$TRAVIS_REPO_SLUG"'",
       "url": "'"$TRAVIS_BUILD_WEB_URL"'",
-      "icon_url": "https://github.com/arpitkamboj/travis-ci-discord-webhook/blob/master/bob_the_builder.jpg"
+      "icon_url": "https://github.com/arpitkamboj/travis-ci-discord-webhook/raw/master/bob_the_builder.jpg"
     },
     "title": "'"$COMMIT_SUBJECT"'",
     "url": "'"$URL"'",
